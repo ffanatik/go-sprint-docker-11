@@ -23,7 +23,7 @@ jobs:
       - name: Lint the code
         run: go vet ./...
 
-      - name: Test with the GO CLI
+      - name: Test with the GO cli
         run: GOOS=linux GOARCH=amd64 go test -v ./...
 
   docker-build: 
